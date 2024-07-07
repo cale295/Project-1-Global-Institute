@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+      .josefin-sans{
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="josefin-sans">
+    <!--Navbar-->
+    <nav class="bg-slate-950 p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white font-bold text-3xl italic">FTIK</div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="#Home" class="text-white">Home</a>
+            <a href="#Academics" class="text-white">Academics</a>
+            <a href="#Structure" class="text-white">Structure</a>
+            <a href="#Achievment" class="text-white">Achievment</a>
+            <a href="#Gallery" class="text-white">Gallery</a>
+          </div>
+        </div>
+        <div class="md:hidden hidden" id="menu">
+          <a href="#Home" class="block px-4 py-2 text-white">Home</a>
+          <a href="#Academics" class="block px-4 py-2 text-white">Academics</a>
+          <a href="#Structure" class="block px-4 py-2 text-white">Structure</a>
+          <a href="#Achievment" class="block px-4 py-2 text-white">Achievment</a>
+          <a href="#Gallery" class="block px-4 py-2 text-white">Gallery</a>
+        </div>
+    </nav>
+    <!--Home-->
+    <div id="Home" class="bg-slate-950 w-auto h-auto md:h-screen px-10 md:px-16 py-10 md:py-0  md:content-center">
+        <div class="grid grid-rows-1 lg:grid-rows-3 md:grid-cols-3 grid-flow-col gap-2">
+            <div class="text-2xl lg:text-4xl font-black text-indigo-600 pt-0 md:pt-40 ">
+                FAKULTAS TEKNOLOGI INFORMASI & KOMUNIKASI
+            </div>
+            <div class="text-white text-sm lg:text-lg text-justify">
+              Fakultas Teknologi Informasi dan Komunikasi (FTIK) adalah sebuah fakultas dalam suatu universitas yang fokus pada pendidikan, penelitian, dan pengembangan dalam bidang teknologi informasi dan komunikasi. Fakultas ini biasanya mencakup program studi yang berkaitan dengan komputer, teknologi informasi, sistem informasi, jaringan, komunikasi digital, dan bidang terkait lainnya.
+            </div>
+            <a href="FTIK.html">
+              <button class="bg-purple-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out w-48 h-14 md:w-56 md:h-20 lg:w-64 lg:h-24">
+                Explore Now
+              </button>
+            </a>
+            <div class="row-span-3 col-span-2 content-center">
+                <img src="elemen/Home.png" alt="" class="w-auto h-auto hidden md:block">
+            </div>
+        </div>
+    </div>
+    <!--academics-->
+    <div id="Academics" class="bg-slate-950 w-auto h-auto xl:h-screen content-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>ACADEMICS</h2>
+      </div>
+      <div class="flex flex-wrap justify-center  gap-12 lg::gap-36 fade-in">
+        <div class="w-auto md:w-96 h-128 bg-slate-900 rounded-2xl text-white p-20 flex flex-col items-start justify-center gap-3 transition-all duration-500 hover:h-144 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="font-bold text-3xl">
+            Information Technology
+          </div>
+          <div class="pb-10">
+            1. Software Engineering<br>
+            2. Internet Of Think & Networking<br>
+            3. Computerized Design & Multimedia
+          </div>
+          <a href="TI.html">
+            <button class="bg-purple-500 font-extrabold p-2 px-6 rounded-xl hover:bg-purple-600 transition-colors">See more</button>
+          </a>
+        </div>
+        <div class="w-auto md:w-96 h-128 bg-slate-900 rounded-2xl text-white p-20 flex flex-col items-start justify-center gap-3 transition-all duration-500 hover:h-144 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="font-bold text-3xl">
+            Information System
+          </div>
+          <div class="pb-10">
+            1. Accounting Information System<br>
+            2. Management Information System<br>
+            3. Logistic & Production Information System
+          </div>
+          <a href="SI.html">
+            <button class="bg-purple-500 font-extrabold p-2 px-6 rounded-xl hover:bg-purple-600 transition-colors">See more</button>
+          </a>
+        </div>
+        <div class="w-auto md:w-96 h-128 bg-slate-900 rounded-2xl text-white p-20 flex flex-col items-start justify-center gap-3 transition-all duration-500 hover:h-144 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="font-bold text-3xl">
+            Film, Television & Media Studies
+          </div>
+          <div class="pb-10">
+            1. Visual Media Communication<br>
+            2. Public Relation & Digital Communication
+          </div>
+          <a href="FTM.html">
+            <button class="bg-purple-500 font-extrabold p-2 px-6 rounded-xl hover:bg-purple-600 transition-colors">See more</button>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center gap-0 lg::gap-36 fade-in">
+        <a href="elemen/file/CURRICULUM.pdf" download="CURRICULUM.pdf">
+          <div class="w-72 md:w-144 h-20 bg-slate-900 rounded-2xl text-white m-5 p-10 flex flex-col items-center justify-center gap-3 transition-all duration-500 hover:h-28 hover:shadow-2xl hover:shadow-slate-400">
+            <div class="text-2xl">
+              Curriculum
+            </div>
+          </div>
+        </a>
+        <a href="elemen/file/ACADEMICS GUIDE.pdf" download="ACADEMICS GUIDE.pdf" >
+          <div class="w-72 md:w-144 h-20 bg-slate-900 rounded-2xl text-white m-5 p-10 flex flex-col items-center justify-center gap-3 transition-all duration-500 hover:h-28 hover:shadow-2xl hover:shadow-slate-400">
+          <div class="text-2xl">
+            Academics Guide
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <!--Struktur-->
+    <div id="Structure" class="bg-slate-950 w-auto h-screen content-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>STRUCTURE</h2>
+      </div>
+      <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-8 md:grid md:grid-cols-4 md:gap-4 overflow-auto h-4/5 fade-in">
+        <!-- Rektor -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Rektor</h2>
+        <p>Dr. H. Dedi Royadi, M.Si.</p>
+        </div>
+    
+        <!-- Wakil Rektor -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Wakil Rektor</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Bidang Akademik :</span>
+            <span> Muchamad Iqbal, S.E., M.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Bidang Non Akademik :</span>
+            <span> M. Iqbal Hanafri, S.Pi., M.Kom.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Dekan -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Dekan</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">FTIK :</span>
+            <span> Rahmat Tullah, M.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">FEB & Ka. Prodi BD :</span>
+            <span> Ramaddan Julianti, M.T.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Ka. Prodi -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Ka. Prodi</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Sistem Informasi :</span>
+            <span> Ahmad Sidik, M.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Teknik Informatika :</span>
+            <span> Dr (Cand) Fredy Susanto, M.Kom</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Kajian Film & Media :</span>
+            <span> M. Luthfi Prabowo, M.Ikom</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Sekretaris Fakultas -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Sekretaris Fakultas</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">FTIK :</span>
+            <span> Nunung Nurmaesah, M.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">FEB :</span>
+            <span> Refi Nabilah Royadi, S.E., S.Kom., M.M.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Komisi Disiplin & Biro Hukum -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Komisi Disiplin & Biro Hukum</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Noor Rochim, S.Sos.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Dr. (cand) M. Ramaddan Julianti, M.T.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Theodora Septiana, S.Kom., M.M.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Lembaga Penelitian & Pengabdian Masyarakat (LPPM) -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">LPPM</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Buccy Ryando, M.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Alfiah Khoirunisa, S.Kom, M.T.I</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Badan Penjaminan Mutu (BPM) -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">BPM</h2>
+        <p>Sutarman, S.S., M.M.</p>
+        </div>
+    
+        <!-- Badan Perencanaan & Pengembangan (BPP) -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">BPP</h2>
+        <p>M. Iqbal Hanafri, S.Pi., M.Kom.</p>
+        </div>
+    
+        <!-- Sekretariat -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Sekretariat</h2>
+        <p>Irma Listiana, S.Kom.</p>
+        </div>
+    
+        <!-- Ka. Biro BAAK -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Ka. Biro BAAK</h2>
+        <p>Nina Septiana, S,Kom</p>
+        </div>
+    
+        <!-- UPT Adm Akademik & Mahasiswa -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Adm Akademik & Mahasiswa</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Nina Septiana, S.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Supardi, S.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Marchia, S.Kom.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- UPT E-learning -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT E-learning</h2>
+        <p>Supardi, S.Kom.</p>
+        </div>
+    
+        <!-- UPT PDPT / Pusat Data -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT PDPT / Pusat Data</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Triono, M.Kom</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Dimas Fahmi, S.Kom.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Ka. Biro Teknologi & Sistem Informasi -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Ka. Biro Teknologi & Sistem Informasi</h2>
+        <p>Nova Teguh Sunggono, M.Kom.</p>
+        </div>
+    
+        <!-- UPT Perpustakaan -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Perpustakaan</h2>
+        <p>Renjana Dian, S.IP</p>
+        </div>
+    
+        <!-- UPT System Development -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT System Development</h2>
+        <p>Bambang Tri, S.Kom.</p>
+        </div>
+    
+        <!-- UPT Infrastruktur & IT Support -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Infrastruktur & IT Support</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Jalaludin, S.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Bambang Tri, S.Kom.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Ka. Biro Keuangan -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Ka. Biro Keuangan</h2>
+        <p>Ratna Suminar</p>
+        </div>
+    
+        <!-- UPT Accounting -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Accounting</h2>
+        <p>Chaerunnisa, S.Kom.</p>
+        </div>
+    
+        <!-- UPT Kasir -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Kasir</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Nita, S.E.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Evita Ayu, S.Kom.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Ka. Biro SDM, GA & Sarana Prasarana -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Ka. Biro SDM, GA & Sarana Prasarana</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Noor Rochim, S.Sos.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Agus Budiman, S. Kom</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- UPT HRD -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT HRD</h2>
+        <p>Noor Rochim, S.Sos.</p>
+        </div>
+    
+        <!-- UPT General Affairs -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT General Affairs</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Soleh</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Nani</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Zein</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Jajuli</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Wahyu ( Security )</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Rouf ( Security )</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Ka. Biro Humas & Kerjasama -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Ka. Biro Humas & Kerjasama</h2>
+        <p>Theodora Septiana, S.Kom., M.M.</p>
+        </div>
+    
+        <!-- UPT Pusat Karir & Kewirausahaan -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Pusat Karir & Kewirausahaan</h2>
+        <p>Vera Lupi Nurpratiwi, S.Kom</p>
+        </div>
+    
+        <!-- UPT Kerjasama -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Kerjasama</h2>
+        <p>Theodora Septiana, S.Kom., M.M.</p>
+        </div>
+    
+        <!-- UPT Humas, Publikasi, Multimedia & Customer Service -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Humas, Publikasi, Multimedia & Customer Service</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Eko Rendi, S.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Novia, S.Kom.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- Ka. Biro Kemahasiswaan & Marketing -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">Ka. Biro Kemahasiswaan & Marketing</h2>
+        <p>Arni R. Mariana, M.Kom.</p>
+        </div>
+    
+        <!-- UPT Marketing -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Marketing</h2>
+        <ul>
+            <li>
+            <span class="text-gray-600">Arni R. Mariana, M.Kom</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Diki Niko, S.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Alief Abdillah, S.Kom.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Helen Sahri, A.Md.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Suheni Novita, A.Md.</span>
+            </li>
+            <li>
+            <span class="text-gray-600">Fikih, A.Md.</span>
+            </li>
+        </ul>
+        </div>
+    
+        <!-- UPT Kemahasiswaan -->
+        <div class="bg-white shadow-md rounded p-4 mb-4">
+        <h2 class="text-lg font-bold">UPT Kemahasiswaan</h2>
+        <p>Diki Niko, S.Kom</p>
+        </div>
+      </div>
+    </div>
+    <!--achievment-->
+    <div id="Achievment" class="bg-slate-950 w-auto h-auto md:h-screen content-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>ACHIEVMENT</h2>
+      </div>
+      <div class="container mx-auto p-4 grid grid-cols-2 gap-4 fade-in">
+        <!-- First Column -->
+        <div class="space-y-4">
+            <div class="h-96 w-full overflow-hidden rounded-lg">
+                <img src="elemen/prestasi/Petanque-Global-Institute-2.jpeg.webp" alt="Image 1" class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 w-full overflow-hidden rounded-lg">
+                <img src="elemen/prestasi/Petanque-Global-Institute-2022.jpg.webp" alt="Image 2" class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 w-full overflow-hidden rounded-lg">
+                <img src="elemen/prestasi/14680822_1776965815848304_2551782478555080835_o.jpg.webp" alt="Image 3" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Second Column -->
+        <div class="space-y-4">
+            <div class="h-48 w-full overflow-hidden rounded-lg">
+                <img src="elemen/prestasi/12190099_1660388997505987_3856668745515568026_n.jpg.webp" alt="Image 5" class="w-full h-full object-cover">
+            </div>
+            <div class="h-48 w-full overflow-hidden rounded-lg">
+                <img src="elemen/prestasi/IMG_1775-scaled.jpg.webp" alt="Image 6" class="w-full h-full object-cover">
+            </div>
+            <div class="h-96 w-full overflow-hidden rounded-lg">
+                <img src="elemen/prestasi/SOT-Global-Institute-2022-scaled.jpg.webp" alt="Image 7" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Gallery-->
+    <div id="Gallery" class="bg-slate-950 w-auto h-auto md:h-screen flex flex-col md:justify-center items-center">
+      <div class="text-white text-center text-3xl py-5 fade-in">
+        <h2>GALLERY</h2>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg w-full md:w-auto lg:w-155 max-w-5xl fade-in">
+        <div class="border-b border-gray-200">
+            <nav class="flex space-x-8 p-6 justify-center">
+                <button class="py-4 px-6 text-xl text-gray-700 border-b-4 border-gray-800 focus:outline-none"
+                    onclick="showTab('2022')">2022</button>
+                <button class="py-4 px-6 text-xl text-gray-700 focus:outline-none"
+                    onclick="showTab('2023')">2023</button>
+                <button class="py-4 px-6 text-xl text-gray-700 focus:outline-none"
+                    onclick="showTab('2024')">2024</button>
+            </nav>
+        </div>
+        <div id="2022" class="p-6">
+            <ol class="list-decimal pl-10 text-xl text-gray-700 space-y-3">
+                <li>
+                  <a href="https://photos.app.goo.gl/nSaTBHHC2oFfWPwW9">Family Gathering Global Institute</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/dSPdGXezHN4gKH569">Gathering Guru BK Tangerang Raya</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/r3ZqUGs6szEL8VNb6">MoU dengan AAPI</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/9EzWGKtfXANg3E9CA">Kerja Sama dengan SMK Jaya Buana</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/bR32HxnSKhjsWp6K8">MoU ITB dengan Bali</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/DDFTzefRfoarwGWp9">KKN Tematik</a>
+                </li>
+            </ol>
+        </div>
+        <div id="2023" class="p-6 hidden">
+            <ol class="list-decimal pl-10 text-xl text-gray-700 space-y-3">
+                <li>
+                  <a href="https://photos.app.goo.gl/k5pNxsRFc1V4ivit9">MoU dengan LPI3 Bandung</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/rSpGckcEt4g4RSE67">MoA dengan STT Bandung</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/Er9dfJwZ1sn3Fx349">Bimtek Guru BK Kota Tangerang</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/BdSgvk9BMbk2Evcy6">Kunjungan ke Yayasan Tunas Harapan Ilahi</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/31paAVPbTYm6mo5e7">Seminar UMUM Strategi Jitu Siap Kerja</a>
+                </li>
+            </ol>
+        </div>
+        <div id="2024" class="p-6 hidden">
+            <ol class="list-decimal pl-10 text-xl text-gray-700 space-y-3">
+                <li>
+                  <a href="https://photos.app.goo.gl/CzUB33hWXDUuGpzX7">Undangan Kolaborasi Walikota Tangerang</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/7jfXkauzCi3HTSN37">LKBB Bimantara 2024</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/GM8ZmE2MqBqYGEDK7">MoC dengan Kampus Taiwan</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/iYFrbKV6cCNYVrZR8">MoU dengan Urawa international School</a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/wncfZvczyBxZeUug8">Kolaborasi dengan Urawa international Japan School</a>
+                </li>
+            </ol>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="bg-slate-950 w-auto h-auto text-white text-lg text-center py-10 content-center">
+      Copyright © Cookies Security Terms of Service Privacy Statement
+    </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach(element => {
+      observer.observe(element);
+    });
+  });
+
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const dropdownBtn = document.getElementById('dropdown-btn');
+  const dropdown = document.getElementById('dropdown');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  dropdownBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+  });
+
+  function showTab(tabId) {
+    const tabs = ['2022', '2023', '2024'];
+    tabs.forEach(id => {
+    document.getElementById(id).classList.add('hidden');
+    });
+    document.getElementById(tabId).classList.remove('hidden');
+      const buttons = document.querySelectorAll('nav button');
+      buttons.forEach(button => {
+        button.classList.remove('border-b-4', 'border-gray-800');
+      });
+    document.querySelector(`nav button[onclick="showTab('${tabId}')"]`).classList.add('border-b-4', 'border-gray-800');
+  }
+</script>
+</html>
